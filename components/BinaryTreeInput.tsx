@@ -22,7 +22,6 @@ export default function BinaryTreeInput() {
   return (
     <>
       <Textarea
-        className="min-w-96"
         onChange={(e) => setContent(e.target.value)}
         value={content}
         placeholder="Enter your binary tree string here..."

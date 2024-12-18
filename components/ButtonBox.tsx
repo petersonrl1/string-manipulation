@@ -1,13 +1,13 @@
 import { Button } from "./ui/button";
 
 type Props = {
-  onGenerate: () => void; 
-  onClear: () => void; 
-}
+  onGenerate: () => void;
+  onClear: () => void;
+};
 
 export default function ButtonBox({ onGenerate, onClear }: Props) {
   return (
-    <div className="buttonBox flex gap-4 items-center flex-col sm:flex-row py-4 justify-center">
+    <div className="buttonBox flex flex-col items-center justify-center gap-4 py-4 sm:flex-row">
       <Button variant="default" onClick={onGenerate}>
         Generate Tree
       </Button>
